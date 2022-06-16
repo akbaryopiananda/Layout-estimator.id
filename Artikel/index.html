@@ -43,40 +43,6 @@
 </head>
 
 <body>
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact
-                            information.
-                        </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <strong>Album</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-        </div>
-    </header>
-
     <main>
         <div style="background-image: url('Background.png'); background-size: cover; height: 455px; background-repeat: no-repeat;">
             <!-- <div style="background-image: url('Background.png'); background-position: center; background-size: cover; height: 455px; background-repeat: no-repeat;"> -->
@@ -98,203 +64,203 @@
 
             <div class="py-5">
                 <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                      </svg></button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <span class="input-group-text">
+                        <button class="btn btn" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </button>
+                </span>
+                    <input type="text" class="form-control" placeholder="Aktivitas Apa yang anda cari?" aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <span class="input-group-text">
                         <button class="btn btn-success" type="button" id="" style="border-radius: 25px;">Semua</button>
                         <button class="btn btn-light" type="button" id="" style="border-radius: 25px;">Artikel</button>
                         <button class="btn btn-light" type="button" id="" style="border-radius: 25px;">Berita</button>
                         <button class="btn btn-light" type="button" id="" style="border-radius: 25px;">Event</button>
                     </span>
+                    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort <br>Terbaru</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Terbaru</a></li>
+                        <li><a class="dropdown-item" href="#">Terlama</a></li>
+                        <li><a class="dropdown-item" href="#">Abjad A-Z</a></li>
+                        <li><a class="dropdown-item" href="#">Abjad Z-</a></li>
+                    </ul>
                 </div>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
             </div>
         </div>
         </div>
+
         <div class="album py-5 bg-light ">
             <div class="container ">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-md-4 g-4 ">
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col ">
-                        <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
-
-                            <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
-                                    </div>
-                                    <small class="text-muted ">9 mins</small>
-                                </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col ">
-                        <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
-
-                            <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
-                                    </div>
-                                    <small class="text-muted ">9 mins</small>
-                                </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="card shadow-sm ">
-                            <svg class="bd-placeholder-img card-img-top " width="100% " height="225 " xmlns="http://www.w3.org/2000/svg " role="img " aria-label="Placeholder: Thumbnail " preserveAspectRatio="xMidYMid slice " focusable="false
-                                "><title>Placeholder</title><rect width="100% " height="100% " fill="#55595c "/><text x="50% " y="50% " fill="#eceeef " dy=".3em ">Thumbnail</text></svg>
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
 
                             <div class="card-body ">
-                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group ">
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">View</button>
-                                        <button type="button " class="btn btn-sm btn-outline-secondary ">Edit</button>
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
                                     </div>
-                                    <small class="text-muted ">9 mins</small>
                                 </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card shadow-sm ">
+                            <img src="xample1.png" style="padding: 10px;border-radius: 25px;" alt="">
+
+                            <div class="card-body ">
+                                <div class="d-flex justify-content-between align-items-center ">
+                                    <small class="text-black" style="font-size: 11px;">20 Juni 2022</small>
+                                    <div class="btn-group" style="font-size: 11px;">
+                                        <button type="button" disabled class="btn btn-sm" style="background-color: #A2DB5E;"><span style="color: #00421b;">Event</span></button>
+                                    </div>
+                                </div>
+                                <h1 style="font-size: 13px; font-weight: 900;">Mengenalkan fitur-fitur terbaru estimator.id yang akan hadir tahun 2022</h1>
+                                <p class="card-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="" style="color: green; font-weight: 900; font-size: 12px;">Baca Selengkapnya <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">
+                    <</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">></a>
+            </li>
+        </ul>
     </main>
-
-    <footer class="text-muted py-5 ">
-        <div class="container ">
-            <p class="float-end mb-1 ">
-                <a href="# ">Back to top</a>
-            </p>
-            <p class="mb-1 ">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0 ">New to Bootstrap? <a href="/ ">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/ ">getting started guide</a>.</p>
-        </div>
-    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
