@@ -9,6 +9,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <title>Artikel | Estimator.id</title>
     <style>
@@ -40,8 +44,75 @@
         color: #a8dd68;
       }
 
-      #button1 .button {
+      #button1 span,
+      .btn {
         background-color: #a8dd68;
+        border: none;
+      }
+
+      #button1 .btn:hover {
+        background-color: #a8dd68;
+        transition: 0.7s;
+      }
+
+      #button2 .btn {
+        background-color: white;
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #666666;
+      }
+
+      #button2 .btn a {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        text-decoration: none;
+        color: #666666;
+      }
+
+      #button2 #side-bar1 a,
+      #side-bar2 a,
+      #side-bar3 a {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #666666;
+      }
+
+      #profil img {
+        height: 420px;
+      }
+
+      #profil p {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 2%;
+        color: #666666;
+      }
+
+      #profil .col img {
+        width: auto;
+        height: 130px;
+        /* padding: 30px; */
+      }
+
+      #profil .col {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        color: #666666;
       }
 
       @media (min-width: 768px) {
@@ -67,43 +138,7 @@
   </head>
 
   <body>
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">
-                Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or
-                contact information.
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-              <circle cx="12" cy="13" r="4" />
-            </svg>
-            <strong>Album</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+    <header></header>
 
     <main>
       <section class="py-5 container">
@@ -125,7 +160,7 @@
           </div>
           <div id="button1" class="col-lg-8">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+              <input type="text" class="form-control" placeholder="Cari Lokasi" aria-label="Example text with button addon" aria-describedby="button-addon1" />
               <span class="input-group-text">
                 <button class="btn btn-outline-secondary" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -136,18 +171,69 @@
             </div>
           </div>
         </div>
+        <div class="row py-lg-4">
+          <div class="col-lg-3">
+            <div id="button2" class="flex-shrink-0 p-3" style="width: 280px">
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true"><i class="fa fa-chevron-down"></i> Buat Akun</button>
+                  <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Profil</a></li>
+                      <li><a href="#" class="link-dark rounded">Verifikasi Email</a></li>
+                      <li><a href="#" class="link-dark rounded">Pengalaman Proyek</a></li>
+                      <li><a href="#" class="link-dark rounded">Bidang Kompetensi</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Buat Proyek</button>
+                  <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Overview</a></li>
+                      <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                      <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                      <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Detail Pekerjaan</button>
+                  <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">New</a></li>
+                      <li><a href="#" class="link-dark rounded">Processed</a></li>
+                      <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                      <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li id="side-bar1">
+                  <a href="#" class="nav-link link-dark"> Duplikasi Pekerjaan </a>
+                </li>
+                <li id="side-bar2">
+                  <a href="#" class="nav-link link-dark"> Hapus Pekerjaan </a>
+                </li>
+                <li id="side-bar3">
+                  <a href="#" class="nav-link link-dark"> Laporan RAB </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="profil" class="col-lg-8">
+            <img src="cover1.png" alt="" />
+            <p>Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col"><img src="cover1.png" alt="" />Mengisi data profile seperti nama, username, password...</div>
+              <div class="col"><img src="cover1.png" alt="" />Mengisi data profile seperti nama, username, password...</div>
+              <div class="col"><img src="cover1.png" alt="" />Mengisi data profile seperti nama, username, password...</div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer class="text-muted py-5">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="# ">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/ ">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/ ">getting started guide</a>.</p>
-      </div>
-    </footer>
+    <footer class="text-muted py-5"></footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
