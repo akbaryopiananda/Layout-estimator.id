@@ -16,144 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <title>Artikel | Estimator.id</title>
-    <style>
-        #text1 p {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-size: 22px;
-            line-height: 35px;
-            padding-top: 20%;
-            color: #666666;
-        }
-        
-        #img1 img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        hr .line-border1 {
-            border: 1px #e4e4e4;
-            border-radius: 5px;
-        }
-        
-        #text2 p {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 35px;
-            color: #a8dd68;
-        }
-        
-        #button1 span,
-        .btn {
-            background-color: #a8dd68;
-            border: none;
-        }
-        
-        #button1 .btn:hover {
-            background-color: #a8dd68;
-            transition: 0.7s;
-        }
-        
-        #button2 .btn {
-            background-color: white;
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 25px;
-            color: #666666;
-        }
-        
-        #button2 .btn-toggle-nav a {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 25px;
-            text-decoration: none;
-            color: #666666;
-            text-decoration: none;
-        }
-        
-        #button2 #side-bar1 a,
-        #side-bar2 a,
-        #side-bar3 a {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 25px;
-            color: #666666;
-        }
-        
-        #profil .img1 {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-        
-        #profil p {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 25px;
-            margin-top: 2%;
-            color: #666666;
-        }
-        
-        #profil .col img {
-            width: auto;
-            height: 130px;
-            /* padding: 30px; */
-        }
-        
-        #profil .col-md-4 p {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 17px;
-            line-height: 25px;
-            color: #666666;
-            z-index: 2;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-        
-        @media (min-width: 400) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-            p {
-                text-align: center;
-            }
-        }
-        
-        body {
-            font-family: "Quicksand";
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header></header>
 
     <main>
-        <section class="py-5 container">
+        <!-- <section class="py-5 container">
             <div class="row py-lg-4">
-                <!-- <div class="col-lg-6 col-md-8 mx-auto"> -->
                 <div id="text1" class="col-lg-6">
                     <p><b>Lihat Tutorial</b> pembuatan akun baru dan cara<br />penggunaan Estimator.id untuk <b>mulai membuat RAB</b><br />dengan <b>praktis, cepat, akurat, dan efiseien!</b></p>
                 </div>
@@ -162,7 +33,8 @@
                 </div>
             </div>
             <hr class="line-border1" />
-        </section>
+        </section> -->
+
         <div class="container">
             <div class="row py-lg-4">
                 <div id="text2" class="col-lg-3">
@@ -173,7 +45,7 @@
                         <input type="text" class="form-control" placeholder="Cari Lokasi" aria-label="Example text with button addon" aria-describedby="button-addon1" />
                         <span class="input-group-text">
                 <button class="btn btn-outline-secondary" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="fill:rgb(255, 255, 255)" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                   </svg>
                 </button>
@@ -186,76 +58,184 @@
                     <div id="button2" class="flex-shrink-0 p-3" style="width: 280px">
                         <ul class="list-unstyled ps-0">
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true"><i class="fa fa-chevron-down"></i> Buat Akun</button>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true"><i class="fa fa-chevron-down"></i>Akun</button>
                                 <div class="collapse show" id="home-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="link-dark rounded">Profil</a></li>
-                                        <li><a href="#" class="link-dark rounded">Verifikasi Email</a></li>
-                                        <li><a href="#" class="link-dark rounded">Pengalaman Proyek</a></li>
-                                        <li><a href="#" class="link-dark rounded">Bidang Kompetensi</a></li>
+                                        <li><a href="#" id="buatlink" onclick="buat()">Membuat Akun</a></li>
+                                        <li><a href="#" id="veriflink" onclick="verif()">Verifikasi Email</a></li>
+                                        <li><a href="#" id="profillink" onclick="profil()">Data Profile</a></li>
+                                        <li><a href="#" id="pengalamanlink" onclick="pengalaman()">Data Pengalaman Proyek</a></li>
+                                        <li><a href="#" id="kompetensilink" onclick="kompetensi()">Bidang Kompetensi</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Buat Proyek</button>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Memulai Proyek</button>
                                 <div class="collapse" id="dashboard-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                        <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                                        <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                                        <li><a href="#" class="link-dark rounded">Annually</a></li>
+                                        <li><a href="#" id="proyeklink" onclick="proyek()">Memulai Proyek baru</a></li>
+                                        <li><a href="#" id="itemlink" onclick="item()">Item Pekerjaan</a></li>
+                                        <li><a href="#" id="kategorilink" onclick="kategori()">Kategori Pekerjaan</a></li>
+                                        <li><a href="#" id="subkategorilink" onclick="subkategori()">Sub Kategori Pekerjaan</a></li>
+                                        <li><a href="#" id="volumelink" onclick="volume()">Input Volume nilai</a></li>
+                                        <li><a href="#" id="hitunglink" onclick="hitung()">Hitung Volume</a></li>
+                                        <li><a href="#" id="ambillink" onclick="ambil()">Mengambil Volume lain</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Detail Pekerjaan</button>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Advance RAB</button>
                                 <div class="collapse" id="orders-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#" class="link-dark rounded">New</a></li>
-                                        <li><a href="#" class="link-dark rounded">Processed</a></li>
-                                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                                        <li><a href="#" id="ahsplink" onclick="ahsp()">Membuat AHSP</a></li>
+                                        <li><a href="#" id="pekerjaanlink" onclick="pekerjaan()">Input Item Pekerjaan</a></li>
+                                        <li><a href="#" id="duplikasilink" onclick="duplikasi()">Duplikasi Pekerjaan</a></li>
+                                        <li><a href="#" id="rincianlink" onclick="rincian()">Menambah Rincian</a></li>
+                                        <li><a href="#" id="pencarianlink" onclick="pencarian()">Pencarian (bahan, upah, dan alat)</a></li>
+                                        <li><a href="#" id="hapuslink" onclick="hapus()">Menghapus pekerjaan</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li id="side-bar1">
-                                <a href="#" class="nav-link link-dark"> Duplikasi Pekerjaan </a>
-                            </li>
-                            <li id="side-bar2">
-                                <a href="#" class="nav-link link-dark"> Hapus Pekerjaan </a>
-                            </li>
-                            <li id="side-bar3">
-                                <a href="#" class="nav-link link-dark"> Laporan RAB </a>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#explore-collapse" aria-expanded="false"><i class="fa fa-chevron-down"></i> Explore Laporan</button>
+                                <div class="collapse" id="explore-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#" id="explorelink" onclick="explore()">Explore laporan</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div id="profil" class="col-lg-8">
+                <div id="cover" class="col-lg-8">
                     <div class="img1">
-                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/wyk7N5YWCIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img src="cover1.png" alt="" />
+                        <div class="row py-lg-5">
+                            <div id="img1" class="col-lg-6">
+                                <img src="Background1.png" alt="" />
                             </div>
-                            <p>Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img src="cover1.png" alt="" />
+                            <div id="text1" class="col-lg-6">
+                                <p><b>Lihat Tutorial</b> pembuatan akun baru dan cara penggunaan Estimator.id untuk <b>mulai membuat RAB</b> dengan <b>praktis, cepat, akurat, dan efiseien!</b></p>
                             </div>
-                            <p>Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img src="cover1.png" alt="" />
-                            </div>
-                            <p>Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
                         </div>
                     </div>
                 </div>
+                <div id="loader" style="display: none;"></div>
+
+                <div id="buat" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/wyk7N5YWCIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Mengisi data profile seperti nama, username, password, dan email untuk login ke Estimator.Id</p>
+                    </div>
+                </div>
+                <div id="verif" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://youtube.com/embed/P1z42wMj-pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Pastikan email yang didaftarkan benar dengan menerima email verifikasi dari tim Estimator.id</p>
+                    </div>
+                </div>
+                <div id="profil" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/xCM1M-O-MIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Mengisi data profil estimator, username, dan password untuk dapat login ke akun Estimator.id</p>
+                    </div>
+                </div>
+                <div id="pengalaman" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/_lFq3FFO2bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Melengkapi pengalaman proyek-proyek yang pernah dikerjakan selama ini</p>
+                    </div>
+                </div>
+                <div id="kompetensi" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/XM9Y8Zl7Cks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Melengkapi bidang kompetensi agar dapat terhubung ke jaringan profesi di Estimator.id</p>
+                    </div>
+                </div>
+                <div id="proyek" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/YzT5xZ2peL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Memulai pembuatan RAB dengan mengisi rincian data profil proyek secara lengkap</p>
+                    </div>
+                </div>
+                <div id="item" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/3xpbKV3QDtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menentukan item-item pekerjaan yang akan dilakukan dalam proyek yang dibuat yang telah tersedia di database Estimator.id</p>
+                    </div>
+                </div>
+                <div id="kategori" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/K28oWYsNM70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menentukan kategori pekerjaan dari pekerjaan-pekerjaan yang akan dilakukan dalam proyek yang dibuat</p>
+                    </div>
+                </div>
+                <div id="subkategori" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/510ishhLW-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menentukan sub item-item pekerjaan dari suatu pekerjaan dalam proyek</p>
+                    </div>
+                </div>
+                <div id="volume" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/AXI9LIciDTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menentukan langsung nilai volume suatu pekerjaan</p>
+                    </div>
+                </div>
+                <div id="hitung" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/M3cWB4Vhpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menghitung nilai volume pekerjaan secara langsung melalui Estimator.id</p>
+                    </div>
+                </div>
+                <div id="ambil" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/iasx0y2eOxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Mengambil nilai volume dari pekerjaan yang lain untuk mempercepat input volume yang sama nilainya</p>
+                    </div>
+                </div>
+                <div id="ahsp" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/UQGdE3lyxqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menambah rincian Analisis Harga Satuan Pekerjaan sendiri yang belum tersedia di database Estimator.id</p>
+                    </div>
+                </div>
+                <div id="pekerjaan" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/e9Qf9FC9qAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menambah item pekerjaan dari suatu pekerjaan yang pernah ditambahkan sebelumnya dalam satu RAB</p>
+                    </div>
+                </div>
+                <div id="duplikasi" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/617y0SKdOro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Melakukan duplikasi item pekerjaan untuk mendapatkan rincian item pekerjaan yang sama dalam satu RAB dengan rincian yang dapat dikustomisasi</p>
+                    </div>
+                </div>
+                <div id="rincian" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/_7lfRJeM7Fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menentukan sendiri rincian bahan, upah, dan alat untuk digunakan dalam AHSP sesuai dengan kebutuhan pekerjaan</p>
+                    </div>
+                </div>
+                <div id="pencarian" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/wBn0v59RxyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Memilih rincian bahan, upah, dan alat yang akan digunakan dalam AHSP yang telah tersedia di database Estimator.id</p>
+                    </div>
+                </div>
+                <div id="hapus" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/UbrxCq4gk5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Menghapus item pekerjaan yang sudah tidak digunakan atau tidak relevan dalam RAB</p>
+                    </div>
+                </div>
+                <div id="explore" class="col-lg-8" style="display: none;">
+                    <div class="img1">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/mwOCYwe1Dpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center">Mengekspor laporan hasil pembuatan RAB menggunakan Estimator.id dalam bentuk dokumen spreadsheet Excel</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
@@ -272,6 +252,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
     -->
+
+    <script src="app.js"></script>
 </body>
 
 </html>
