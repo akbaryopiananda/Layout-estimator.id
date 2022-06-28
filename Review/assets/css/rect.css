@@ -12,15 +12,15 @@
 }
 
 .satu {
-    background-image: url(1.png);
+    background-image: url('/Review/assets/img/1.png');
 }
 
 .dua {
-    background-image: url(2.png);
+    background-image: url('/Review/assets/img/2.png');
 }
 
 .tiga {
-    background-image: url(3.png);
+    background-image: url('/Review/assets/img/3.png');
 }
 
 .cc-selector-2 input:active+.drinkcard-cc,
